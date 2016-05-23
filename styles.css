@@ -7,3 +7,8 @@ h1 {
 	background-color: darkblue
 	color: darkorange;
 }
+p {
+	background-color: black;
+	color: orange;
+	margin: 40px;
+}
