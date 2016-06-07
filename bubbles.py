@@ -12,9 +12,7 @@ while not sort:
 	for element in range(0, rolls-1):
 		if rollist[element] > rollist[element + 1]:
 			sort = False  # We found two elements in the wrong order
-			temp = rollist[element + 1]
-			rollist[element + 1] = rollist[element]
-			rollist[element] = temp
+			rollist[element], rollist[element+1] = rollist[element+1], rollist[element]
 print rollist
 
 
