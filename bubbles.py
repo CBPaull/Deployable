@@ -1,5 +1,6 @@
-
 rolls = input('Number of values: ')
+from datetime import datetime
+startTime = datetime.now()
 rollist = []
 for count in range (0, rolls):
 	import random
@@ -14,6 +15,10 @@ while not sort:
 			sort = False  # We found two elements in the wrong order
 			rollist[element], rollist[element+1] = rollist[element+1], rollist[element]
 print rollist
+
+
+print datetime.now() - startTime
+
 
 
 
